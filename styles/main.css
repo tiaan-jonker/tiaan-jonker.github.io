@@ -51,4 +51,11 @@ body {
   padding: 20px;
 }
 
+#logo {
+  font-size: 42px;
+  color: var(--colour-pink);
+}
 
+#dot {
+  color: var(--colour-primary-white);
+}
