@@ -1,3 +1,12 @@
+:root {
+  --colour-background: #0B1830;
+  --colour-pink: #FF0A78;
+  --colour-blue: #6DB1BF;
+  --colour-primary-white: #F4F7F5;
+  --colour-secondary-white: #DCDEDD;
+  --colour-tertiary-white: #C3C6C4;
+}
+
 *, 
 ::before,
 ::after {
@@ -21,6 +30,12 @@ body {
   max-width: 1100px;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
 .nav {
   display: flex;
   height: 5rem;
@@ -35,4 +50,5 @@ body {
 .nav-link {
   padding: 20px;
 }
+
 
