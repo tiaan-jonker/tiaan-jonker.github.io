@@ -38,6 +38,7 @@ body {
   display: flex;
   align-items: center;
   flex: 1;
+  padding: 0px 20px;
 }
 
 .nav {
@@ -56,10 +57,21 @@ body {
 }
 
 #logo {
-  font-size: 42px;
+  margin-right: 80px;
   color: var(--colour-pink);
+  font-size: 42px;
+  font-weight: 700;
 }
 
 #dot {
   color: var(--colour-primary-white);
 }
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  color: var(--colour-primary-white);
+}
+
+.nav-link:hover,
+.nav-link:active {}
