@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
 :root {
   --colour-background: #0B1830;
   --colour-pink: #FF0A78;
@@ -22,6 +25,7 @@
 
 body {
   line-height: 1.5;
+  font-family: 'Inter', sans-serif;
 }
 
 .container {
