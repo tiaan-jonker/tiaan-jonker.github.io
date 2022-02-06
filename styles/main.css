@@ -7,6 +7,8 @@
   --colour-primary-white: #F4F7F5;
   --colour-secondary-white: #DCDEDD;
   --colour-tertiary-white: #C3C6C4;
+
+  --container-padding: 0 30px;
 }
 
 *, 
@@ -35,9 +37,11 @@ a {
 }
 
 .container {
+  position: relative;
   margin: 0 auto;
+  min-height: 100vh;
   max-width: 900px;
-  padding: 0px 30px;
+  padding: var(--container-padding);
 }
 
 .nav-bar {
@@ -122,4 +126,16 @@ a {
 .blog-link:hover,
 .blog-link:active {
 
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 60px);
+  height: 80px;
+  padding: 25px 0px;
+}
+
+.footer-link {
+  color: var(--colour-pink)
 }
