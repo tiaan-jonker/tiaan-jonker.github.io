@@ -24,7 +24,7 @@
 
 body {
   line-height: 1.5;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   background-color: var(--colour-background);
   color: var(--colour-primary-white);
 
@@ -60,13 +60,19 @@ body {
 
 #logo {
   margin-right: 80px;
-  color: var(--colour-pink);
   font-size: 42px;
   font-weight: 700;
 }
 
+#logo-text:link, 
+#logo-text:visited{
+  text-decoration: none;
+  color: var(--colour-pink);
+}
+
 #dot {
   color: var(--colour-primary-white);
+  border-radius: 50%;
 }
 
 .nav-link:link,
@@ -83,7 +89,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: 'Roboto Slab';
 }
 
 .main-title {
