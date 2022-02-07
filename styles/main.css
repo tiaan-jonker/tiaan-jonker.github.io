@@ -50,6 +50,9 @@ a {
   justify-content: space-between;
   flex: 1;
   margin-bottom: 100px;
+  position: sticky;
+  top: 0;
+  background-color: var(--colour-background);
 }
 
 .nav {
@@ -159,3 +162,4 @@ a {
 .footer-link {
   color: var(--colour-pink)
 }
+
