@@ -1,0 +1,100 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.general-style {
+  border: 1px dashed #F4F7F5;
+}
+
+.size {
+  width: 100px;
+  height: 100px;
+}
+
+.parent-box-1 {
+  display: flex;
+  padding: 10px;
+  height: 120px;
+  width: 320px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 95px;
+}
+
+.pink-1 {
+  background: #FF0A78;
+}
+
+.pink-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: #FF0A78;
+}
+
+.iden,
+.ticle {
+  background: #6DB1BF;
+}
+
+.pink-2 {
+  background: #FF0A78;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.parent-box-2 {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  height: 120px;
+  width: 320px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 95px;
+}
+
+.pink-3 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #FF0A78;
+}
+
+.pink-4 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: #FF0A78;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+
+  height: 200px;
+}
+
+.footer-link {
+  color: var(--colour-pink)
+}
+
+.parent-box-3 {
+  display: flex;
+  padding: 10px;
+  height: 120px;
+  width: 110px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 95px;
+}
+
+.pink-5 {
+  position: relative;
+  bottom: 40px;
+  left: 70px;
+  background: #FF0A78;
+}
