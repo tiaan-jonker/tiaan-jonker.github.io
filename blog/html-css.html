@@ -13,7 +13,7 @@
 </head>
 <body>
   
- <div class="container">
+ <div class="container ">
   <div class="nav-bar">
     <div id="logo">
       <a id="logo-text" href="../index.html"><span>TJ</span><span id="dot">.</span></a>
@@ -41,31 +41,38 @@
         How did you even get there? </p>
       
       <p>Learning CSS can sometimes be frustrating, especially when elements don't behave intuitively. 
-        Position elements is no exception. So in this post I will explain how the position property works. 
-        We will cover four properties: static, relative, fixed and the all powerful absolute positioning.</p>
+        Positioning elements is no exception. So in this post I will explain how the position property works. 
+        We will cover four properties: </p>
+        <div class="blog-list">
+          <ul>
+            <li>static</li>
+            <li>relative</li>
+            <li>fixed</li>
+            <li>and the all powerful absolute positioning</li>
+          </ul>
+        </div>
       
       <h4 class="article-title">Relative Position</h4>
       <p>To start off I have assembled a family of boxes below. The dashed line containing the three boxes is the 
-        parent. The three containers are the children namely: PINK (our main protagonist) and two twins named Iden 
-        and Ticle:</p>
+        parent. The three containers within are the children namely: PINK (our main protagonist) and two twins 
+        named Iden and Ticle:</p>
 
         <div class="parent-box-1 general-style">
           <div class="pink-1 center general-style size">PINK</div>
-          <div class="iden center general-style size">IDEN</div>
-          <div class="ticle center general-style size">TICLE</div>
+          <div class="iden center general-style size">IDEN...</div>
+          <div class="ticle center general-style size">...TICLE</div>
         </div>
 
       <p>At this point it is important to note that all elements have default properties. In this 
-        case the default position property of PINK and the twins (and all elements fot that mater) is 
-        "static". Keeping that in mind if we just wanted to move PINK down by 30px and 30px to the 
-        left we can add...</p>
+        case the default position property of PINK and the twins (and all elements for that matter) is 
+        "static". Keeping that in the following code (to move PINK down and right by 20px) ...</p>
       <pre>
         .pink {
           top: 20px;
           left: 20px;
         }
       </pre>
-      <p>... but nothing will happen. So we need to change the default behaviour of our elements
+      <p>... won't work. So we need to change the default behaviour of our elements
          by changing the position property to relative: </p>
       <pre>
         .pink {
@@ -75,10 +82,12 @@
         }
       </pre>
 
+      <p>Refresh the page and we get:</p>
+
       <div class="parent-box-1 general-style">
         <div class="pink-2 center general-style size">PINK</div>
-        <div class="iden center general-style size">IDEN</div>
-        <div class="ticle center general-style size">TICLE</div>
+        <div class="iden center general-style size">IDEN...</div>
+        <div class="ticle center general-style size">...TICLE</div>
       </div>
 
       <p>Now its working. By changing PINK's position property from static to relative we are 
@@ -105,8 +114,8 @@
         But it is powerful. Once you realise the power of absolute positioning it might be tempting
         to place everything absolutely. </p>
       <p>With absolute positioning you can place an element exactly where you want it to be on the 
-        page. Lets start by just changing PINK's position to absolute and the parents position to 
-        relative. </p>
+        page. Lets start by changing PINK's position to absolute and the parents position to 
+        relative (while keeping the offset properties the same). </p>
      <pre>
       .parent {
         position: relative;
@@ -121,8 +130,8 @@
 
     <div class="parent-box-2 general-style">
       <div class="pink-3 center general-style size">PINK</div>
-      <div class="iden center general-style size">IDEN</div>
-      <div class="ticle center general-style size">TICLE</div>
+      <div class="iden center general-style size">IDEN...</div>
+      <div class="ticle center general-style size">...TICLE</div>
     </div>
 
       <p>Essentially relative and absolute positioning does the same thing but there are some 
@@ -131,22 +140,36 @@
         <div class="blog-list">
           <ul>
             <li>PINK was taken out of the normal flow visually and now the twins are inconsiderate:
-              PINK's space is now invaded. There was a visual change and spacial change.</li>
+              PINK's space is now invaded. There was a visual change and a spacial change.</li>
             <li>the absolute position of PINK is positioned relative to the parent that has the 
               a property of relative. You are basically saying to PINK: <a href="https://stackoverflow.com/questions/10487292/position-absolute-but-relative-to-parent" class="general-links">
                 please position yourself in relation to the nearest ancestor which has position: 
                 relative.</a></li>
           </ul>
         </div>
+        <p>(Also, did you notice anything peculiar? See the bonus material for more information. 
+          Hint: it has to do with the parents padding which is 10px.)</p>
 
-      <p>Also, did you notice anything peculiar? See the bonus material for more information. 
-        Hint: it has to do with the parents padding which is 10px.</p>
+      <p class="relative-position">To demonstrate the second point further lets add another box called: Big Parent 
+        as below. Now when we shift position: relative from the smaller parent to Big Parent, PINK is now positioned
+        <strong>absolutely, relative to the Big Parent:</strong>
+      </p>
+      
+      <div class="big-parent general-style"> 
+        <div class="parent-box-4 general-style">
+          <div class="pink-6 center general-style size">PINK</div>
+          <div class="iden center general-style size">IDEN...</div>
+          <div class="ticle center general-style size">...TICLE</div>
+        </div>
+        <p>Big parent</p>
+      </div>
+
 
       <h3 class="article-title">Position Fixed</h3>
-      <p>Now finally our last positional property: fixed. It's very much the same as absolute 
-        however this time the element is position relative to the viewport.</p>
-      <p>The best way to illustrate this would be change PINK's position to fixed and position to 
-        the bottom left corner of this screen. </p>
+      <p>Now finally our last positional property: fixed. It's very much the same as absolute, 
+        however this time the element is positioned relative to your viewport.</p>
+      <p>The best way to illustrate this would be change PINK's position to fixed and position it to 
+        the bottom right corner of this screen. </p>
       <p>While it is commoly used for navigation bars I instead used the "sticky" position for 
         this website.</p>
       <p>I want to thank <a href="https://sindre-frisvold-git.github.io/" class="general-links">Sindre Frisvold</a> for reminding me of this neat trick.</p>
@@ -154,11 +177,11 @@
       <div class="pink-4 center general-style size">PINK</div>
 
       <h3 class="article-title">Bonus Section</h3>
-      <p>We all love bonus sections I am sure.</p>
+      <p>We all love bonus sections.</p>
 
       <p><u>Bonus #1</u></p>
-      <p>I just want to briefly cover positioning elements because this always confused me, then 
-        it snapped.</p>
+      <p>I just want to briefly cover positioning elements with top, bottom, right and left because that always 
+        confused me in the past.</p>
       <p>If we want to move PINK up by 40px and to the right by 70px we add the following code:</p>
       <pre>
         .pink {
@@ -173,17 +196,17 @@
       <p>Think of it this way:</p>
       <div class="blog-list">
         <ul>
-          <li>You want to move it down by 40px? Add 40px of "magic filler" to the <strong>top</strong>.</li>
-          <li>Want to move it right by 70px? Add 70px of " magic filler" to the <strong>left</strong>.</li>
-          <li>The reverse of the above for moving it to the left.</li>
-          <li>Want to move it up by 100px? Add 100px of support to the <strong>bottom</strong>.</li>
+          <li>You want to move it down by 40px? Add 40px worth of weight to the <strong>top</strong>.</li>
+          <li>Want to move it right by 70px? Add 70px of "magic filler" to the <strong>left</strong>.</li>
+          <li>The reverse for moving it to the left.</li>
+          <li>Finally, want to move it up by 70px? Add 70px of support to the <strong>bottom</strong>.</li>
         </ul>
       </div>
 
       <p><u>Bonus #2</u></p>   
       <p>Going back to where we change the position of PINK in "relative positioning" and 
-        "absolute positioning". Did you notice we specific the same top and left off-set yet
-        PINK is closer to its original position when absolute than when its relative? 
+        "absolute positioning". Did you notice we specified the same top and left off-set for both sections yet
+        PINK is closer to its original position when it was absolute than when it was relative? 
       </p>   
       <p>What is happening here is that PINK is ignoring the parents padding of 10px when placed
         in absolute mode.

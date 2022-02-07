@@ -54,6 +54,8 @@
   margin-right: 10%;
 }
 
-
-
+.big-parent {
+  position: relative;
+  margin-bottom: 30px;
+}
 
