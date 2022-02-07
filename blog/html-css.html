@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Document</title>
+</head>
+<body>
+  
+ <div class="container">
+  <div class="nav-bar">
+    <div id="logo">
+      <a id="logo-text" href="#"><span>TJ</span><span id="dot">.</span></a>
+    </div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="blog.html">Blog</a></li>
+        <li><a class="nav-link" href="#">About</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <article>
+      <header>
+        <h3 class="blog-title">my first blog</h3>
+      </header>
+      <p>CSS can sometimes appear to be a shallow puddle. Not too complex, not too deep, easy to navigate. You Add a few colours, change some font sizes, and specify the width and height of an image. You add more and more elements and styling. Then you refresh the page and it's a mess. This joke sums it up nicely:</p>
+      <p>Two CSS properties walk into a bar. <br>
+        A barstool in a completely different bar falls over. </p>
+      <p>That shallow puddle somehow turned into Lake Baikal. How did you even get there? </p>
+      <p>Learning CSS can sometimes be frustrating, especially when elements don't behave intuitively. Position elements is no exception. So in this post I will explain how the position property works. We will cover four properties: static, relative, fixed and the all powerful absolute positioning.</p>
+      
+      <h4>Relative Position</h4>
+      <p>To start off I have assembled a family of boxes below. The dashed line containing the three boxes is the parent. The three containers are the children namely: PINK (our main protagonist) and two twins named Iden and Ticle:</p>
+      <img src="images/pic-1.png" alt="" class="example-1">
+      <p>At this point it is important to note that all elements have default properties. In this case the default position property of all elements is static. If we wanted to move PINK down by 30px and 30px to the left we add...</p>
+      <pre>
+        .pink {
+          top: 20px;
+          left: 20px;
+        }
+      </pre>
+      <p>... but nothing will happen. So we need to change the default behaviour of our elements aby changing the position property to relative:: </p>
+      <pre>
+        .pink {
+          position: relative;
+          top: 20px;
+          left: 20px;
+        }
+      </pre>
+      <p>Now its working. By changing PINK's property from static to relative essentially level up and gain access to new properties, namely: top, bottom, right, and left (but wait! Why am I changing the top and left properties when I wanted to move it down and to the right? See the bonus section below.)</p>
+      <p>Here comes the important part. When off-setted PINK by 20px down and to the right we did that relative to where it was previously. Did you also notice something? The twins are very considerate, they did not take the space of where PINK used to be. While we visually moved PINK the space it occupied did not move.  </p>
+      <img src="images/pic-2.png" alt="" class="example-1">
+      <h3>Absolute Positioning</h3>
+      <p>WARNING. USE WITH CAUTION. OVERUSE MIGHT BECOME ADDICTIVE. Not to be confused with Absolute vodka. But it is powerful. Once you realise the power of absolute positioning it might be tempting to place everything absolutely. </p>
+      <p>With absolute positioning you can place an element exactly where you want it to be on the page. Lets start by just changing PINK's position to absolute and the parents position to relative. </p>
+     <pre>
+      .parent {
+        position: relative;
+      }
+
+      .pink {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+    </pre>
+    <img src="images/pic-3.png" alt="" class="example-1">
+      <p>Essentially relative and absolute positioning does the same thing but there are some key differences: </p>
+      <p>1. PINK was taken out of the normal flow visually and now the twins are inconsiderate: PINK's space is now invaded. There was a visual change and spacial change.</p>
+      <p>2. the absolute position of pink is positioned relative to the parent that has the a property of relative. You are basically saying to PINK: please position yourself in relation to the nearest ancestor which has position: relative.</p>
+      <p>Also, did you notice anything peculiar? See the bonus material for more information. Hint: it has to do with the parents padding which is 10px.</p>
+
+      <h3>Position FIxed</h3>
+      <p>Now finally our last positional property: fixed. It's very much the same as absolute however this time the element is position relative to the viewport.</p>
+      <p>The best way to illustrate this would be change PINK's position to fixed and position to the bottom left corner of this screen. </p>
+      <div class="pink">PINK</div>
+    </article>
+  </main>
+ </div> 
+
+</body>
+</html>
+
