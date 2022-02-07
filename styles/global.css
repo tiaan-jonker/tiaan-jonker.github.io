@@ -48,5 +48,22 @@ s {
   min-height: 100vh;
   max-width: 900px;
   padding: var(--container-padding);
+  position: relative;
 }
 
+.main-blog-body {
+  height: 100%;
+}
+
+.general-links {
+  color: inherit;
+  text-decoration: underline var(--colour-pink);
+  transition: all .5s;
+}
+
+.general-links:hover,
+.general-links:active {
+  text-decoration: none;
+  text-shadow: 0 0 5px rgba(217, 183, 252, 0.589),
+    0 0 5px rgba(141, 173, 253, 0.829);
+}
