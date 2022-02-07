@@ -1,0 +1,50 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin-bottom: 100px;
+  position: sticky;
+  top: 0;
+  background-color: var(--colour-background);
+}
+
+.nav {
+  display: flex;
+  height: 5rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-link {
+  padding: 20px;
+}
+
+#logo {
+  margin-right: 80px;
+  font-size: 42px;
+  font-weight: 700;
+  font-family: 'Inter';
+}
+
+#logo-text:link, 
+#logo-text:visited{
+  color: var(--colour-pink);
+}
+
+#dot {
+  color: var(--colour-primary-white);
+  border-radius: 50%;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: var(--colour-primary-white);
+}
+
+.nav-link:hover,
+.nav-link:active {}

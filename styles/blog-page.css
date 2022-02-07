@@ -1,0 +1,20 @@
+.blog-title {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.blog-link:link,
+.blog-link:visited {
+  color: var(--colour-pink);
+
+}
+
+.blog-link:hover,
+.blog-link:active {
+
+}
+
+
+
+

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap');
+
+:root {
+  --colour-background: #091b28;
+  --colour-pink: #FF0A78;
+  --colour-blue: #6DB1BF;
+  --colour-primary-white: #F4F7F5;
+  --colour-secondary-white: #DCDEDD;
+  --colour-tertiary-white: #C3C6C4;
+
+  --container-padding: 0 30px;
+}
+
+*, 
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* NOTE: line-height reset due to accessibility */
+
+body {
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--colour-background);
+  color: var(--colour-primary-white);
+
+}
+
+a {
+  text-decoration: none;
+}
+
+s {
+  color: inherit;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  min-height: 100vh;
+  max-width: 900px;
+  padding: var(--container-padding);
+}
+

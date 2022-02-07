@@ -1,0 +1,42 @@
+.header {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-title {
+  font-size: 100px;
+  line-height: 1;
+  margin-bottom: 50px;
+  font-weight: 400;
+  text-shadow: 0 0 50px rgba(217, 183, 252, 0.301),
+    0 0 20px rgba(141, 173, 253, 0.719);
+}
+
+.main-intro {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+
+.btn {
+  background: var(--colour-pink);
+  border: none;
+  border-radius: 40px;
+  padding: 12px 30px;
+  margin-top: 30px;
+  cursor:pointer;
+  color: var(--colour-primary-white);
+  transition: all .3s;
+  font-size: 16px;
+}
+
+.btn:hover{
+  background: var(--colour-pink);
+  transform: scale(1.1);
+}
+
+.btn-blog {
+}
