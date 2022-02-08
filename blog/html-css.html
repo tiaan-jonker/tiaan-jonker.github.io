@@ -57,10 +57,10 @@
         parent. The three containers within are the children namely: PINK (our main protagonist) and two twins 
         named Iden and Ticle:</p>
 
-        <div class="parent-box-1 general-style">
-          <div class="pink-1 center general-style size">PINK</div>
-          <div class="iden center general-style size">IDEN...</div>
-          <div class="ticle center general-style size">...TICLE</div>
+        <div class="general-parent-style">
+          <div class="pink general-style">PINK</div>
+          <div class="twin-box general-style">IDEN...</div>
+          <div class="twin-box general-style">...TICLE</div>
         </div>
 
       <p>At this point it is important to note that all elements have default properties. In this 
@@ -84,10 +84,10 @@
 
       <p>Refresh the page and we get:</p>
 
-      <div class="parent-box-1 general-style">
-        <div class="pink-2 center general-style size">PINK</div>
-        <div class="iden center general-style size">IDEN...</div>
-        <div class="ticle center general-style size">...TICLE</div>
+      <div class="general-parent-style">
+        <div class="pink general-style pink-relative-ex">PINK</div>
+        <div class="twin-box general-style">IDEN...</div>
+        <div class="twin-box general-style">...TICLE</div>
       </div>
 
       <p>Now its working. By changing PINK's position property from static to relative we are 
@@ -128,10 +128,10 @@
       }
     </pre>
 
-    <div class="parent-box-2 general-style">
-      <div class="pink-3 center general-style size">PINK</div>
-      <div class="iden center general-style size">IDEN...</div>
-      <div class="ticle center general-style size">...TICLE</div>
+    <div class="general-parent-style position-relative">
+      <div class="pink general-style pink-absolute-ex">PINK</div>
+      <div class="twin-box general-style">IDEN...</div>
+      <div class="twin-box general-style">...TICLE</div>
     </div>
 
       <p>Essentially relative and absolute positioning does the same thing but there are some 
@@ -155,11 +155,11 @@
         <strong>absolutely, relative to the Big Parent:</strong>
       </p>
       
-      <div class="big-parent general-style"> 
-        <div class="parent-box-4 general-style">
-          <div class="pink-6 center general-style size">PINK</div>
-          <div class="iden center general-style size">IDEN...</div>
-          <div class="ticle center general-style size">...TICLE</div>
+      <div class="big-parent"> 
+        <div class="general-parent-style">
+          <div class="pink general-style pink-absolute-ex-2">PINK</div>
+          <div class="twin-box general-style">IDEN...</div>
+          <div class="twin-box general-style">...TICLE</div>
         </div>
         <p>Big parent</p>
       </div>
@@ -174,7 +174,7 @@
         this website.</p>
       <p>I want to thank <a href="https://sindre-frisvold-git.github.io/" class="general-links">Sindre Frisvold</a> for reminding me of this neat trick.</p>
       
-      <div class="pink-4 center general-style size">PINK</div>
+      <div class="general-style pink-fixed-ex">PINK</div>
 
       <h3 class="article-title">Bonus Section</h3>
       <p>We all love bonus sections.</p>
@@ -190,8 +190,8 @@
           left: 70px;
         }
       </pre>
-      <div class="parent-box-3 general-style">
-        <div class="pink-5 center general-style size">PINK</div>
+      <div class="general-parent-style-2">
+        <div class="pink general-style pink-relative-ex-2">PINK</div>
       </div>
       <p>Think of it this way:</p>
       <div class="blog-list">
