@@ -54,8 +54,20 @@
   margin-right: 10%;
 }
 
-.big-parent {
-  position: relative;
-  margin-bottom: 30px;
+blockquote {
+  padding: 10px 30px;
+  background: #22323E;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+
+  height: 200px;
+}
+
+.footer-link {
+  color: var(--colour-pink)
+}

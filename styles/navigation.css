@@ -25,13 +25,13 @@
 
 #logo {
   margin-right: 80px;
-  font-size: 42px;
-  font-weight: 700;
-  font-family: 'Inter';
 }
 
 #logo-text:link, 
 #logo-text:visited{
+  font-size: 42px;
+  font-weight: 700;
+  font-family: 'Inter';
   color: var(--colour-pink);
 }
 
