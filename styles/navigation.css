@@ -15,7 +15,6 @@
   display: flex;
 }
 
-
 .nav-links {
   display: flex;
   align-items: center;
@@ -35,9 +34,11 @@
   color: var(--colour-pink);
 }
 
-#dot {
+#logo-dot {
   color: var(--colour-primary-white);
   border-radius: 50%;
+  text-shadow: 0px 0px 5px rgba(217, 183, 252, 0.712),
+  0 0 20px rgba(141, 173, 253, 0.829);
 }
 
 .nav-link {
