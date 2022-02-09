@@ -31,7 +31,6 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: var(--colour-background);
   color: var(--colour-primary-white);
-
 }
 
 a {
@@ -43,7 +42,6 @@ s {
 }
 
 .container {
-  position: relative;
   margin: 0 auto;
   min-height: 100vh;
   max-width: 900px;
