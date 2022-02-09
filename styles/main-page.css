@@ -37,8 +37,6 @@
   transform: scale(1.1);
 }
 
-.btn-blog {
-}
 
 .footer {
   position: absolute;
@@ -51,3 +49,5 @@
 .footer-link {
   color: var(--colour-pink)
 }
+
+
