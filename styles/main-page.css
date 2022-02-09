@@ -50,4 +50,10 @@
   color: var(--colour-pink)
 }
 
+.background-image {
+  background-image: url('../background-img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 
+}
