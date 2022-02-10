@@ -1,3 +1,18 @@
+.blog-title {
+  margin-top: clamp(1rem, 6vh, 4.5rem);
+  font-size: clamp(3rem, 4.2vh ,5rem);
+  color: var(--colour-primary-white);
+}
+
+.blog-synopsis {
+  font-size: clamp(1.2rem, 1.7vh, 1.9rem);
+}
+
+small {
+  color: var(--colour-tertiary-white); 
+  font-size: clamp(0.6rem, 1vh, 1.2rem);
+}
+
 
 .blog-link:link,
 .blog-link:visited {
@@ -51,16 +66,7 @@
   margin-bottom: 20px;
 }
 
-.blog-title {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-size: 50px;
-  color: var(--colour-primary-white);
-}
 
-.blog-synopsis {
-  font-size: 19px;
-}
 
 .article-title {
   margin-top: 50px;
