@@ -6,24 +6,24 @@
 }
 
 .header {
-  height: 50vh;
+  height: clamp(5vh, 65vh, 70vh);
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .main-title {
-  font-size: 120px;
   font-weight: 200;
   font-family: 'Bitter', sans-serif;
+  font-size: clamp(2rem, 10vw, 12rem);
+  margin-bottom: 2rem;
   line-height: 1;
-  margin-bottom: 50px;
-  text-shadow: 0 0 50px rgba(217, 183, 252, 0.301),
+  text-shadow: 0 0 50px rgba(176, 166, 185, 0.301),
     0 0 20px rgba(141, 173, 253, 0.719);
 }
 
 .main-intro {
-  font-size: 20px;
+  font-size: clamp(1rem, 2vw, 3rem);
   line-height: 1.4;
   font-weight: 300;
 }
@@ -38,19 +38,21 @@
   font-weight: 400;
 }
 
-.btn {
+.blog-btn {
   background: var(--colour-pink);
   border: none;
   border-radius: 40px;
-  padding: 12px 30px;
-  margin-top: 30px;
+  padding-block: clamp(0.5rem, 0.8vh,2rem);
+  padding-left: clamp(1rem, 1.8vh, 3rem);
+  padding-right: clamp(1rem, 1.8vh, 3rem);
+  margin-top: clamp(1rem, 2vh, 3rem);
+  font-size: clamp(1rem, 2vh, 2rem);
   cursor:pointer;
   color: var(--colour-primary-white);
   transition: all .3s;
-  font-size: 16px;
 }
 
-.btn:hover{
+.blog-btn:hover{
   background: var(--colour-pink);
   transform: scale(1.1);
 }
@@ -58,8 +60,8 @@
 .footer {
   position: absolute;
   bottom: 0;
+  height: 8rem;
   width: calc(100% - 60px);
-  height: 80px;
   padding: 25px 0px;
 }
 

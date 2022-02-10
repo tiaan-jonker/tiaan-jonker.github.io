@@ -24,7 +24,9 @@
   padding: 0;
 }
 
-/* NOTE: line-height reset due to accessibility */
+html {
+  font-size: 62.5%;
+}
 
 body {
   line-height: 1.5;
@@ -46,11 +48,6 @@ s {
   min-height: 100vh;
   max-width: 900px;
   padding: var(--container-padding);
-  position: relative;
-}
-
-.main-blog-body {
-  height: 100%;
 }
 
 .general-links {
@@ -68,8 +65,4 @@ s {
 
 small {
   color: var(--colour-tertiary-white);
-}
-
-.under-construction {
-  font-size: 200px;
 }
