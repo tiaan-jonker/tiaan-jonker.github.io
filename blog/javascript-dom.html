@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/global.css">
+  <link rel="stylesheet" href="/styles/navigation.css">
+  <link rel="stylesheet" href="/styles/blog-page.css">
+  <link rel="stylesheet" href="/styles/media-queries.css">
+  <link rel="stylesheet" href="/styles/javascript-dom-illustration.css">
+  <title>TJ & the DOM</title>
+</head>
+<body>
+  <div class="container ">
+    <div class="nav-bar">
+      <div id="logo">
+        <a id="logo-text" href="../index.html"><span>TJ</span><span id="logo-dot">.</span></a>
+      </div>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a class="nav-link" href="../index.html">Home</a></li>
+          <li><a class="nav-link" href="blog.html">Blog</a></li>
+          <li><a class="nav-link" href="#">About</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1606799955515-85468ee78c26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80" alt="" class="identity-blog-image">
+  
+    <main class="main-blog-body">
+      <article class="blog-article">
+        <header>
+          <h3 class="blog-title">javascript fundamentals</h3>
+        </header>
+
+        <h4 class="article-title">HTML and CSS - an analogy</h4>
+        <p>When thinking about building a website hopefully HTML and CSS come to mind. These two languages go hand-in-hand working together to build a website.</p>
+        <p>We can think of building a website like building a house. HTML can be thought of as the frame, roof, walls, and floor of the house. We plan out what the house will look like, where certain features (or elements) should be placed, what each room might contain and so on. All of that is done with HTML. It sets up the basic content and structure of a webpage.</p>
+        <p>However think of the most bland and uninteresting house you have ever seen. Everything is black, white or grey. That is where CSS comes in. We can select the roof, walls and so on and give it whatever colour we want or change the size of certain elements (amongst other things). That is CSS, it modifies the design and display of HTML elements.</p>
+        <p>As a bonus you might have heard of JavaScript? TLDR; in our analogy adding JavaScript would be like adding wiring to our house so now we can turn lights on, cook some food in the oven, turn the TV on etc. The house is now more interactive.</p>
+
+        <h4 class="article-title">Control flow and loops</h4>
+        <p>Understanding control flow is important because it is the order in which a programmer executes code. The control flow in JavaScript works like this: your programing code will execute code from top to bottom in an ordered way with only a few exceptions. One of the exceptions is when there is any condition or loop in the code that changes the control flow of a program.</p>
+        
+        <p>To illustrate we can call on our protagonist, PINK, <a href="/blog/html-css.html" class="general-links">who you have met before</a> . PINK has learned to drive a car and wants to drive from Auckland to Wellington. In a top to bottom normal flow PINK would just drive down without thinking about road rules. Thats not smart.</p>
+        <p>We need to control the flow of PINK with conditions and loops to interrupt this flow. We can, for example, specify PINK should do when at or approaching intersections with traffic lights. It might go like this:</p>
+        <div class="blog-list">
+          <ol>
+            <li>Drive as normal.</li>
+            <li>When at (or approaching) an intersection with a traffic light check what colour it is.</li>
+            <li>IF it is green then go.</li>
+            <li>ELSE if it is red then stop then go back to step two.</li>
+          </ol>
+        </div>
+        <p>That is better. Now PINK will check what colour the traffic light is and will decide what to do based on it. The second part of step four is an important loop for PINK to follow. If we never told PINK to go back to re-check the traffic light again PINK will remain there. Alone.</p>
+        
+        <h4 class="article-title">Arrays vs Objects - accessing data</h4>
+        <p>Arrays and objects are frequently used in JavaScript so knowing how to access data from either is more important than knowing how to breath (ok, maybe not).</p>
+        <p>An array is an ordered collection of items and the items can be accessed by their numerical position. Though there's a catch: arrays use "zero-based indexing" meaning that the first item in an array is at position, or has an index, of 0 (for an explantion on why that is <a href="https://medium.com/analytics-vidhya/array-indexing-0-based-or-1-based-dd89d631d11c#:~:text=In%20modern%2Dday%20computer%20science,array%20indices%20starting%20at%20zero.&text=In%20these%20cases%2C%20the%20use,we%20often%20use%20arrays%20for." class="general-links">see this article</a>.) To illustrate lets say you have an array of countries: <code>let country = ["Cape Verde", "Djibouti", "Andorra"]</code>. The first country, Cape Verde, can be accessed with: <code>country[0]</code>. Think of the square brackets like a hand grasping the items you want.</p>
+        <p>An object on the other hand represents something and is not numerically positioned. It could be anything that has a set of characteristics. Think of a car: it is a real object, and has properties that can be thought of as keys and values (in a JavaScript context). Lets create our car object <code>const car = {colour: red, shape: sedan}</code>. The "colour" is the key and "red" its value. Now to access the value of the colour key in the car object you can use either "dot notation" or "bracket notation". With dot notion it would look like this: <code>car.colour</code>; with bracket notation: <code>car["colour"]</code>. Either one returns the value of "red" from the key "colour".</p>
+
+        <h4 class="article-title">The DOM</h4>
+        <p>The DOM, or also known as the Document Object Model, sounds technical and intimidating but it can be understood by breaking it down. The DOM is an interface and lives in our browsers and it serves as a portal for programming languages, like JavaScript, to access your HTML code. 
+        <p>The DOM does this by reading your HTML, it takes that document and creates a model representation of the original which is now of a data type object.</p>
+        <p>And what can we do with objects? Hint: see the previous section. Thats right we can access certain properties and manipulate them using JavaScript...</p> 
+        <p>Let's get to the fun part. As the HTML document is now an object, and the DOM interface allows us to access and change HTML elements, we can start with select Shape button below with: <code>document.querySelector(".shape-btn")</code>. Now that the button is selected we can add something called an "addEventLister" method. That will watch whenever you click on the button. When you do used some JavaScript code to change PINK shape whenever the button is clicked as an example.</p>
+
+        <div class="dom-btns">
+          <button class="shape-btn btn">Shape</button>
+          <button class="colour-btn btn">Colour</button>
+          <button class="position-btn btn">Position</button>
+          <button class="happy-btn btn">Happy!</button>
+        </div>
+        <div class="pink">
+            <div class="eye-area eye-one hide"></div>
+            <div class="eye-area eye-two hide"></div>
+            <div class="smile hide"></div>
+        </div>
+        
+
+        <h4 class="article-title">Functions and their usefulness</h4>
+        <p>Say you are in detention and you're required to write out: "I should do my homework." 1,000 times. Furthermore every fifth sentence needs to include "And do it well.". All of this has to be done on a computer, but the copy and paste features are disabled. It will get tedious and boring. But what if there was a way to do that automatically? Enter functions. Think of a function as a factory that can produce that same sentence as many times as required. The useful thing about this function factory is that it can be reused multiple times. The code can also be called upon whenever it is needed. Lets say instead of writing out 1,000 times you are required to write it out 10,000 times! No problem. The function can be made more dynamic by passing in the number of times it needs to run, when calling it, without modifying the code within the function factory manually each time. </p>
+
+      </article>
+    </main>
+    <footer class="footer">
+      <a class="footer-link" href="https://github.com/tiaan-jonker">github</a> 
+      &nbsp • &nbsp 
+      <a class="footer-link" href="https://www.linkedin.com/in/tiaan-jonker-45283380/">linkdin</a>
+    </footer>
+   </div> 
+
+   <script src="/script.js"></script>
+
+</body>
+</html>
