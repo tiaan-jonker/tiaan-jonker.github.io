@@ -1,0 +1,99 @@
+.pink {
+  background-color:var(--colour-pink);
+  height: 100px;
+  width: 100px;
+  transition: all .3s;
+  position: relative;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.blue-colour {
+  background-color: var(--colour-blue);
+}
+
+.pink-end {
+  margin-left: auto;
+}
+
+.position-change {
+  animation: move-end 5s;
+}
+
+@keyframes move-end {
+  0% {
+    left: 0
+  }
+  50% {
+    left: 100%;
+    transform: scale(0.3)
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.happy-face {
+  background-color: yellow;
+  position: relative;
+  display: block;
+  border-radius: 50%;
+}
+
+.eye-area {
+  width: 15px;
+  height: 30px;
+  background: black;
+  border-radius: 15px;
+  position: absolute;
+  top: 23%;
+}
+
+.eye-one {
+  left: 30%;
+}
+
+.eye-two {
+  right: 30%;
+}
+
+.smile {
+  width: 60px;
+  height: 20px;
+  border: 5px solid black;
+  background: black;
+  border-radius: 0 0 60px 60px / 0 0 40px 40px;
+  position: absolute;
+  bottom: 15%;
+  left: 20%;
+}
+
+.hide {
+  display: none;
+}
+
+.dom-btns {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: clamp(1rem, 2.7vh, 4rem);
+}
+
+.btn {
+  background: none;
+  border: 2px solid var(--colour-pink);
+  border-radius: 40px;
+  padding-block: clamp(0.5rem, 0.8vh,2rem);
+  padding-left: clamp(1rem, 1.4vh, 3rem);
+  padding-right: clamp(1rem, 1.4vh, 3rem);
+  font-size: clamp(1rem, 1.3vh, 2rem);
+  cursor:pointer;
+  color: var(--colour-primary-white);
+  transition: all .3s;
+}
+
+.btn:hover{
+  background: var(--colour-pink);
+  transform: scale(1.1);
+}

@@ -5,8 +5,9 @@
   position: sticky;
   top: 0;
   background-color: var(--colour-background);
-  z-index: 100;
   height: clamp(2rem, 10vh, 10rem);
+  margin-bottom: clamp(1rem, 10vh, 14rem);
+  z-index: 100;
 }
 
 .nav-links {
