@@ -52,6 +52,10 @@ small {
   0 0 50px rgba(141, 173, 253, 0.144);
 }
 
+.growth-image {
+  width: 100%;
+}
+
 .blog-article {
   font-size: 20px;
   font-family: 'Inter';
