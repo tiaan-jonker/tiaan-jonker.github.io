@@ -62,7 +62,7 @@ small {
   line-height: 1.6;
   font-weight: 300;
   color: var(--colour-secondary-white);
-  max-width: 670px;
+  max-width: 720px;
 }
 
 .blog-article > p {
