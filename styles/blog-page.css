@@ -1,6 +1,7 @@
 .blog-title {
   font-size: clamp(3rem, 4.2vh ,5rem);
   color: var(--colour-primary-white);
+  margin-bottom: 30px;
 }
 
 .blog-synopsis {
