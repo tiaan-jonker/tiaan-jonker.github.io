@@ -114,3 +114,12 @@ blockquote {
   color: var(--colour-pink)
 }
 
+.solidarity-message {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  height: 40px;
+  background-color: black;
+}

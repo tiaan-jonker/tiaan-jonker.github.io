@@ -63,3 +63,12 @@ s {
     0 0 5px rgba(141, 173, 253, 0.829);
 }
 
+.solidarity-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  height: 50px;
+  background-color: black;
+  font-size: 30px;
+}
