@@ -6,7 +6,7 @@
   top: 0;
   background-color: var(--colour-background);
   height: clamp(2rem, 10vh, 10rem);
-  margin-bottom: clamp(1rem, 10vh, 14rem);
+  margin-bottom: clamp(1rem, 2vh, 10rem);
   z-index: 100;
 }
 

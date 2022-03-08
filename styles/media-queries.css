@@ -1,13 +1,4 @@
 @media all and (max-width: 730px) {
-  .nav-bar {
-    margin-bottom: 20px;
-  }
-  .main-title {
-    font-size: 80px;
-  }
-  .main-intro {
-    font-size: 17px;
-  }
   .blog-title {
     font-size: 45px;
     margin-top: 0px;
@@ -22,36 +13,18 @@
 }
 
 @media all and (max-width: 600px) {
-  .main-title {
-    font-size: 60px;
-  }
-  .main-intro {
-    font-size: 15px;
-  }
   .blog-title {
     font-size: 35px;
   }
 }
 
 @media all and (max-width: 550px) {
-  .main-intro {
-    font-size: 14px;
-  }
   .blog-article {
     font-size: 16px;
   }
 }
 
 @media all and (max-width: 450px) {
-  .nav-link {
-    font-size: 16px;
-  }
-  .main-title {
-    font-size: 50px;
-  }
-  .main-intro {
-    font-size: 13px;
-  }
   .blog-title {
     font-size: 28px;
     margin-bottom: 5px;
@@ -66,28 +39,6 @@
 }
 
 @media all and (max-width: 380px) {
-  .nav-bar {
-    margin-bottom: 10px;
-  }
-  .nav-link {
-    font-size: 14px;
-  }
-  #logo {
-    margin-right: 40px;
-  }
-  #logo-text:link,
-  #logo-text:visited {
-    font-size: 32px;
-  }
-  .header {
-    height: 220px;
-  }
-  .main-title {
-    font-size: 45px;
-  }
-  .main-intro {
-    font-size: 12px;
-  }
   .btn {
     font-size: 12px;
     padding: 10px 20px;
