@@ -1,6 +1,26 @@
-@media all and (max-width: 730px) {
+@media all and (max-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
   .blog-title {
     font-size: 45px;
+    margin-top: 0px;
+  }
+  small {
+    font-size: 14px;
+  }
+  .blog-synopsis {
+    font-size: 18px;
+    margin-bottom: 34px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .container {
+    width: 950px;
+  }
+  .blog-title {
+    font-size: 42px;
     margin-top: 0px;
   }
   small {
@@ -38,7 +58,10 @@
   }
 }
 
-@media all and (max-width: 380px) {
+@media all and (max-width: 320px) {
+  .container {
+    width: 800px;
+  }
   .btn {
     font-size: 12px;
     padding: 10px 20px;
